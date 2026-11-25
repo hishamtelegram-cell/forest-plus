@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#234B35" />
+      <stop offset="100%" stop-color="#14251B" />
+    </linearGradient>
+    <linearGradient id="canopy" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#A9C7A4" />
+      <stop offset="50%" stop-color="#3D7950" />
+      <stop offset="100%" stop-color="#234B35" />
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F2DBA0" />
+      <stop offset="100%" stop-color="#D6B56D" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)" />
+  <circle cx="256" cy="256" r="210" fill="none" stroke="url(#gold)" stroke-width="6" stroke-opacity="0.35" />
+  <!-- Soil Mound -->
+  <path d="M126 400 Q256 365 386 400 Z" fill="#5D4037" />
+  <!-- Trunk -->
+  <path d="M236 392 L244 250 L268 250 L276 392 Z" fill="#6D4C41" />
+  <path d="M256 300 L210 258 L218 248 L256 280 Z" fill="#6D4C41" />
+  <path d="M256 285 L302 246 L294 236 L256 268 Z" fill="#6D4C41" />
+  <!-- Canopy Layers -->
+  <circle cx="256" cy="182" r="78" fill="url(#canopy)" />
+  <circle cx="195" cy="228" r="56" fill="url(#canopy)" opacity="0.92" />
+  <circle cx="317" cy="228" r="56" fill="url(#canopy)" opacity="0.92" />
+  <circle cx="256" cy="134" r="52" fill="#A9C7A4" opacity="0.55" />
+  <!-- Star / Plus Badge -->
+  <path d="M376 112 L376 152 M356 132 L396 132" stroke="url(#gold)" stroke-width="14" stroke-linecap="round" />
+</svg>

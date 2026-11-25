@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  html[dir="ltr"] body {
+    font-family: var(--font-sans-en), system-ui, -apple-system, sans-serif;
+  }
+
+  html[dir="rtl"] body {
+    font-family: var(--font-arabic), system-ui, -apple-system, sans-serif;
+    line-height: 1.7;
+  }
+
+  h1, h2, h3 {
+    letter-spacing: -0.015em;
+  }
+
+  html[dir="rtl"] h1,
+  html[dir="rtl"] h2,
+  html[dir="rtl"] h3 {
+    letter-spacing: 0;
+  }
+}
+
+/* Subtle nature-inspired scrollbars */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(61, 121, 80, 0.35);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(61, 121, 80, 0.65);
+}
